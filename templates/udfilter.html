@@ -1,0 +1,48 @@
+{% load usdfilters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-defined filters</title>
+    <style>
+        body{
+            background-color:cyan;
+        }
+        h1{
+            color:red;
+        }
+        h2{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>User-defined Filters</h1>
+
+        <h2>{{data|swapping}}</h2>
+        <h2>{{data2|swapping}}</h2>
+        <h2>{{data|remove:'h'}}</h2>
+        <h2>{{data2|remove:'h'}}</h2>
+        <h2>{{data|counting:'h'}}</h2>
+        <h2>{{data2|counting:'h'}}</h2>
+        <h2>{{data|counting:'H'}}</h2>
+        <h2>{{data2|counting:'H'}}</h2>
+        <h2>{{data|counting:'aM'}}</h2>
+        <h2>{{data2|counting:'aM'}}</h2>
+        <h2>{{data|upper|splitting}}</h2>
+        <h2>{{data2|lower|splitting}}</h2>
+        <h2>{{data2|index:'F'}}</h2>
+        <h2>{{data2|index:'R'}}</h2>
+        <h2>{{data|index:'h'}}</h2>
+        <h2>{{data2|dupliremove}}</h2>
+        <h2>{{data3|dupliremove}}</h2>
+        <h2>{{data3}}</h2>
+        <h2>{{data3|countconst}}</h2>
+        <h2>{{data3|countvowel}}</h2>
+
+    </center>
+</body>
+</html>
